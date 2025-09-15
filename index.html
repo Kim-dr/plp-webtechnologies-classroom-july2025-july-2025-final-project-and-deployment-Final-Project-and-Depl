@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title displayed in browser tab -->
+    <title>St Maria Mombasa Hospital</title>
+    
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="styles\style.css">
+    
+    <!-- Favicon for browser tab icon -->
+    <link rel="icon" type="image/png" href="assets/hospital.png">
+</head>
+
+<body>
+    <!-- Main container wrapper for the entire page -->
+    <div class="container">
+        <!-- Fixed navigation bar at the top of the page -->
+        <nav>
+            <!-- Hospital logo/brand name -->
+            <div class="logo">
+                <h1>St Maria Mombasa Hospital</h1>
+            </div>
+            
+            <!-- Hamburger menu icon for mobile navigation -->
+            <i id="bar">☰</i>
+            
+            <!-- Main navigation menu list -->
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#doctor">Our Doctors</a></li>
+                <li><a href="#speciality">Our Specialities</a></li>
+                <li><a href="#patient">Patient Reviews</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile navigation menu -->
+<div id="mobile-menu" class="mobile-menu">
+    <a href="">Home</a>
+    <a href="#doctor">Our Doctors</a>
+    <a href="#speciality">Our Specialities</a>
+    <a href="#patient">Patient Reviews</a>
+    <a href="#contact">Contact Us</a>
+</div>
+
+
+        <!-- Hero/Main section with welcome message and image -->
+        <div class="main">
+            <!-- Main text content for hero section -->
+            <div class="mainText">
+                <h1>Putting a smile <br>
+                    on a patient's face</h1>
+                <h3>Ensuring we offer the best health services</h3>
+                <button>Discover More</button>
+            </div>
+            <!-- Hero image showing hospital team -->
+            <img src="assets/team.png" alt="hospital" height="600" width="700">
+        </div>
+        
+        <!-- Our Doctors section -->
+        <div id="doctor">
+            <!-- Section heading -->
+            <div class="head">
+                <h1>Our Doctors</h1>
+            </div>
+            
+            <!-- Container for doctor team cards -->
+            <div class="teams">
+                <!-- Laboratory team card -->
+                <div class="card">
+                    <img src="assets/labs.png"alt="labs">
+                    <p><strong>Laboratory team</strong></p>
+                    <p>Our lab experts work tirelessly to ensure you get accurate and timely results.You can trust us to provide reliable support every step of the way</p>
+                </div>
+                
+                <!-- Pharmacy team card -->
+                <div class="card">
+                    <img src="assets/pharmacy.png"alt="pharmacy">
+                    <p><strong>Pharmacy team</strong></p>
+                    <p>Our pharmacy team is here to guide you beyond just prescriptions. We advise and make sure you understand your medication for safe and effective care. Your well-being is always at the heart of what we do.</p>
+                </div>
+                
+                <!-- Maternity team card -->
+                <div class="card">
+                    <img src="assets/maternity.png"alt="maternity">
+                    <p><strong>Maternity team</strong></p>
+                    <p>Welcoming new life is a special moment, and our maternity team is honored to be part of it. You and your little one are always in safe, caring hands.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Our Specialities section -->
+        <div id="speciality">
+            <!-- Section heading -->
+            <div class="head">
+                <h1>Our Specialities</h1>
+            </div>
+            
+            <!-- Container for speciality cards -->
+            <div class="speciality">
+                <!-- In-patient services card -->
+                <div class="spCard">
+                    <img src="assets\inpatient.png" alt="inpatient">
+                    <p>In-patient</p>
+                    <p>Inpatient Team – "We make your hospital stay as comfortable as possible with expert care and a personal touch. Our focus is on helping you heal and recover. Every patient is treated with dignity and compassion."</p>
+                </div>
+                
+                <!-- Out-patient services card -->
+                <div class="spCard">
+                    <img src="assets\outpatient.png" alt="outpatient">
+                    <p>Out-patient</p>
+                    <p>Outpatient Team – "We provide quality care without long hospital stays. Your time matters, so we ensure smooth and efficient visits. From check-ups to follow-ups, we're here for your health journey."</p>
+                </div>
+                
+                <!-- Ultrasound and delivery services card -->
+                <div class="spCard">
+                    <img src="assets\ultrasound.png" alt="ultrasound">
+                    <p>Ultra-sound and delivery</p>
+                    <p>Ultrasound Team – "Clear scans, gentle care, and answers you can trust."
+                        Delivery Team – "Supporting mothers and welcoming newborns with love."</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Patient Reviews section with image carousel -->
+        <div id="patient">
+            <!-- Section heading -->
+            <div class="head">
+                <h1>Patient Reviews</h1>
+                <p> A brief display of how our everyday interactions with the patients is like.</p>
+            </div>
+            
+            <!-- Reviews carousel container -->
+            <div class="reviews">
+                <!-- First set of patient review images -->
+                <div class="patientReview">
+                    <img src="assets\p1.png" alt="p1">
+                    <img src="assets\p2.png" alt="p2">
+                </div>
+                
+                <!-- Second set of patient review images -->
+                <div class="patientReview">
+                    <img src="assets\p3.png" alt="p3">
+                    <img src="assets\p4.png" alt="p4">
+                </div>
+                
+                <!-- Third set of patient review images -->
+                <div class="patientReview">
+                    <img src="assets\p5.png" alt="p5">
+                    <img src="assets\p6.png" alt="p6">
+                </div>    
+            </div>
+        </div>
+
+        <!-- Contact Us section with form -->
+        <div id="contact">
+            <!-- Section heading -->
+            <div class="head">
+                <h1>Contact Us</h1>
+            </div>
+            
+            <!-- Contact form container -->
+            <div class="contact">
+                <h1>Connect With Us</h1>
+                
+                <!-- Name input field -->
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter your name here" id="name" name="name"><br>
+                
+                <!-- Email input field -->
+                <label for="email">Email:</label>
+                <input type="text" placeholder="Enter your email here" id="email"><br>
+                
+                <!-- Password input field -->
+                <label for="password">Password:</label>
+                <input type="password" placeholder="Enter your password here" id="password"><br>
+                
+                <!-- Submit button -->
+                <button id="connectBtn">Connect</button>
+            </div>
+        </div>
+
+        <!-- Footer section with hospital information -->
+        <div class="footer">
+            <!-- About Us column -->
+            <div class="text">
+                <h3>About Us</h3>
+                <p>Regulated Visiting Hours</p>
+                <p>Personalized Care</p>
+                <p>Top Educated Doctors</p>
+                <p>Constant Service</p>
+                <p>Secure facility</p>
+            </div>
+            
+            <!-- Speciality services column -->
+            <div class="text">
+                <h3>Speciality</h3>
+                <p>In-patient</p>
+                <p>Out-patient</p>
+                <p>Pharmacy</p>
+                <p>Laboratory</p>
+                <p>Delivery and Ultrasound</p>
+            </div>
+            
+            <!-- Best Teams column -->
+            <div class="text">
+                <h3>Best Teams</h3>
+                <p>Doctors</p>
+                <p>Nursing</p>
+                <p>Catering</p>
+                <p>Security</p>
+                <p>Hospital</p>
+            </div>
+            
+            <!-- Address and contact information column -->
+            <div class="text">
+                <h3>Address</h3>
+                <p>Kenya</p>
+                <p>Kisumu</p>
+                <p>Mamboleo</p>
+                <p>P.O.Box 2344-00000</p>
+                <p>+254729446677</p>
+            </div>
+        </div>
+        
+        <!-- Modal popup for displaying doctor team details -->
+        <div id="doctorModal" class="modal">
+            <div class="modal-content">
+                <!-- Close button for modal -->
+                <span class="close">&times;</span>
+                <!-- Dynamic content area for modal -->
+                <div id="modalBody"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Link to external JavaScript file -->
+    <script src="javascript\script.js"></script>
+</body>
+</html>

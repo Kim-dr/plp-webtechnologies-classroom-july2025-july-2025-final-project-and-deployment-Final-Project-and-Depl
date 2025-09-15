@@ -1,0 +1,503 @@
+/* Global reset and box-sizing for all elements */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Body styling with font family and background color */
+body{
+    font-family: "Roboto",sans-serif;
+    background-color: #e6e6e6;
+}
+
+/* Fixed navigation bar at the top of the page */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(11, 78, 78);
+    color: white;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 1000; /* High z-index to stay above other elements */
+}
+
+/* Navigation menu list styling - horizontal layout */
+ul{
+    display: flex; 
+}
+
+/* Remove default list styling from navigation items */
+ul li{
+    list-style: none;  
+}
+
+/* Navigation link styling */
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-inline: 16px;
+    color: white;
+}
+
+/* Navigation link hover effect */
+ul li a:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+/* Hospital logo styling */
+.logo{
+    font-size: 22px;
+}
+
+/* Main hero section styling */
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(16, 106, 106);
+    color: white;
+    min-height: 640px;
+    padding: 100px 20px 20px 20px; /* Top padding to account for fixed nav */
+    flex-wrap: wrap;
+}
+
+/* Main text content in hero section */
+.mainText{
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Hero section image styling */
+.main img{
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    min-width: 300px;
+    
+}
+.main img:hover {
+    transform: scale(1.05) translateY(-10px); /* Makes image float & enlarge slightly */
+    transition: transform 0.3s ease-in-out;   /* Smooth animation */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);   /* Floating shadow effect */
+    
+}
+
+
+/* Main heading with responsive font size */
+.mainText h1{
+    font-size: clamp(35px, 5vw, 55px);
+}
+
+/* Subheading with responsive font size */
+.mainText h3{
+    font-size: clamp(25px, 4vw, 35px);
+    margin-top: 20px;
+}
+
+/* Call-to-action button styling */
+.mainText button{
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-top: 22px;
+    border-radius: 5px;
+    transition: 1s ease, transform 2s ease-in-out;
+}
+
+/* Button hover effect with scaling */
+.mainText button:hover{
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+/* Container for doctor team cards */
+.teams{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Individual doctor team card styling */
+.teams .card{
+    width: 100%;
+    max-width: 300px;
+    min-height: 390px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 22px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Card hover effect - lift animation */
+.teams .card:hover{
+    transform: translateY(-5px);
+}
+
+/* Card image styling */
+.card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover; /* Maintain aspect ratio while filling container */
+}
+
+/* Card text content spacing */
+.card p{
+    margin: 11px;
+}
+
+/* Section heading container */
+.head{
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* Section heading with responsive font size */
+.head h1{
+    font-size: clamp(28px, 4vw, 36px);
+}
+
+/* Container for speciality service cards */
+.speciality{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Individual speciality service card styling */
+.speciality .spCard{
+    width: 100%;
+    max-width: 300px;
+    padding: 22px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 22px;
+}
+
+/* Speciality card image styling */
+.spCard img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Speciality card text spacing */
+.spCard p{
+    margin-top: 11px;
+}
+
+/* Patient Reviews Section */
+/* Patient section with top margin for spacing */
+#patient{
+    margin-top: 60px;
+}
+
+/* Patient reviews carousel container */
+.reviews{
+    width: 90%;
+    max-width: 800px;
+    height: 400px;
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden; /* Hide slides that are not currently visible */
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Individual review slide styling */
+.patientReview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Positioned absolutely for carousel effect */
+    background-color: #fff;
+    transition: all 1s ease; /* Smooth transition for carousel */
+    padding: 20px;
+    gap: 10px;
+}
+
+/* Patient review images styling */
+.patientReview img{
+    max-width: 45%;
+    height: auto;
+    max-height: 350px;
+    border-radius: 8px;
+    object-fit: contain; /* Maintain aspect ratio without cropping */
+}
+
+/* Contact form container */
+.contact{
+    width: 90%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 22px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+/* Contact form labels */
+.contact label {
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* Contact form input fields */
+.contact input {
+    width: 100%;
+    font-size: 18px;
+    padding: 14px;
+    margin-top: 8px;
+    border: none;
+    outline: none;
+    background-color: #e4e1e1;
+    border-radius: 4px;
+}
+
+/* Contact form submit button */
+.contact button{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(13, 98, 98);
+    color: white;
+    font-size: 17px;
+    border: none;
+    margin-top: 22px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Contact form heading color */
+.contact h1{
+    color: rgb(13, 124, 124);
+}
+
+/* Footer section styling */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    margin-top: 66px;
+    background-color: rgb(11, 76, 76);
+    color: white;
+}
+
+/* Footer column styling */
+.footer .text{
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Footer paragraph spacing */
+.text p{
+    margin-top: 12px;
+}
+
+/* Modal popup overlay */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1000; /* High z-index to appear above other content */
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0,0,0,0.6); /* Semi-transparent black overlay */
+}
+
+/* Modal content box */
+.modal-content {
+    background: white;
+    margin: 5% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    max-height: 80vh;
+    overflow-y: auto; /* Scrollable if content is too long */
+}
+
+/* Modal close button */
+.close {
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Hamburger menu icon - hidden by default on desktop */
+#bar{
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+/* Tablet and smaller desktop screens */
+@media screen and (max-width: 1100px){
+    /* Stack main section vertically on smaller screens */
+    .main{
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    /* Text content appears first */
+    .mainText{
+        order: 1;
+    }
+    /* Image appears second and smaller */
+    .main img{
+        order: 2;
+        max-width: 80%;
+    }
+}
+
+/* Mobile and tablet screens */
+@media screen and (max-width: 900px){
+    /* Hide desktop navigation menu */
+    ul{
+        display: none;
+    }
+    /* Show hamburger menu icon */
+    #bar{
+        display: block;
+    }
+    /* Adjust navigation layout */
+    nav{
+        justify-content: space-between;
+    }
+    /* Stack team cards vertically */
+    .teams{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Make team cards wider on mobile */
+    .teams .card{
+        max-width: 90%;
+    }
+    /* Stack speciality cards vertically */
+    .speciality{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Make speciality cards wider on mobile */
+    .speciality .spCard{
+        max-width: 90%;
+    }
+}
+
+/* Small mobile screens */
+@media screen and (max-width: 600px){
+    /* Smaller logo text */
+    .logo h1{
+        font-size: 18px;
+    }
+    /* Adjust main section padding for mobile */
+    .main{
+        padding: 120px 10px 20px 10px;
+    }
+    /* Reduce section heading padding */
+    .head{
+        padding: 40px 10px;
+    }
+    /* Smaller reviews container */
+    .reviews{
+        width: 95%;
+        height: 300px;
+    }
+    /* Stack review images vertically */
+    .patientReview{
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    /* Smaller review images */
+    .patientReview img{
+        max-width: 80%;
+        max-height: 120px;
+    }
+    /* Wider contact form on mobile */
+    .contact{
+        width: 95%;
+        padding: 15px;
+    }
+    /* Smaller input fields */
+    .contact input{
+        font-size: 16px;
+        padding: 12px;
+    }
+    /* Stack footer columns vertically */
+    .footer{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* Very small mobile screens */
+@media screen and (max-width: 400px){
+    /* Even smaller review images */
+    .patientReview img{
+        max-width: 90%;
+        max-height: 100px;
+    }
+    /* Smaller reviews container */
+    .reviews{
+        height: 250px;
+    }
+}
+
+/* Mobile menu (hidden by default) */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(11, 78, 78);
+    position: absolute;
+    top: 70px;   /* height of your nav */
+    right: 0;
+    width: 200px;
+    padding: 20px;
+    z-index: 999;
+}
+
+/* Links inside mobile menu */
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.mobile-menu a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    padding-left: 8px;
+}
+
+/* Show when active */
+.mobile-menu.active {
+    display: flex;
+}
