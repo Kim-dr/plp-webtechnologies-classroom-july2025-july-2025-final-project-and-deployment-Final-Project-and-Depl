@@ -12,7 +12,7 @@ Take a look at the St Maria Mombasa Hospital website project here using this lin
 **[View the live project link here]**
 
 Link for GitHub pages: https://your-username.github.io/st-maria-hospital
-Link for Netlify:
+Link for Netlify:https://finalprojecthospitalweb.netlify.app/
 
 ## Features ⚙️
 
@@ -139,5 +139,6 @@ For support or questions about this project, please contact:
 - Inspiration from [St Consolata Kisumu Hospital in Kenya]
 
 ---
+
 
 Thank you for checking out the St Maria Mombasa Hospital website project!
